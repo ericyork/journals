@@ -2,8 +2,8 @@ body {
   width: 90%;
   margin: 0 auto;
   font-family: 'lato', sans-serif;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 1.25;
 }
 h2 {
@@ -154,4 +154,54 @@ footer ul a img {
 }
 footer ul a img:hover {
   opacity: 1;
+}
+header {
+  border-bottom: 2px dashed #AAA;
+  margin-bottom: 1rem;
+  padding: .8rem;
+  text-transform: uppercase;
+}
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.journal {
+  border-left: 4px solid #777;
+  padding-left: 1em;
+  margin: 2em 1em;
+  opacity: .7;
+  transition: all .4s ease-in-out;
+}
+.journal h3 {
+  transition: all .4s ease-in-out;
+  margin-top: .25rem;
+}
+.journal:hover {
+  opacity: 1;
+  border-color: goldenrod;
+}
+.journal:hover h3 {
+  color: goldenrod;
+}
+.journal ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.journal li:not(:last-child):after {
+  content: '·';
+  padding: 0 1em;
+}
+.details span:not(:last-child) {
+  font-size: 80%;
+}
+.journal:hover .issn {
+  color: #000;
+}
+@media screen and (max-width: 990px) {
+  .list {grid-template-columns: 1fr 1fr;}
+  .journal ul {flex-direction: column;}
+}
+@media screen and (max-width: 550px) {
+  .list {grid-template-columns: 1fr;}
 }
