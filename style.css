@@ -5,6 +5,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.25;
+  background-color: #121212;
 }
 h2 {
   text-transform: uppercase;
@@ -50,7 +51,7 @@ li.main {
 .main a {
   background: transparent;
   border: none;
-  color: #777;
+  color: #DADADA;
   margin-right: .5rem;
   text-decoration: underline;
   transition: all .2s ease-out;
@@ -71,9 +72,12 @@ li.main {
 @media screen and (min-width: 1170px) {
   .container {grid-template-columns: 1fr 1fr 1fr;}
 }
+@media screen and (min-width: 1440px) {
+  .container {grid-template-columns: 1fr 1fr 1fr 1fr;}
+}
 .card {
   background: #F9F9F9;
-  height: 456px;
+  height: 425px;
   padding: .25rem;
   box-shadow: 0 1px 6px rgba(0,0,0,.5);
   transition: box-shadow .3s ease-out;
@@ -133,7 +137,7 @@ footer {
 }
 footer p {
   font-family: 'gentium book basic', serif;
-  color: #777;
+  color: #DADADA;
 }
 footer ul {
   list-style: none;
